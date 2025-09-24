@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Regan | Data Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/animation.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+</head>
+<body>
+    <div class="animated-gradient-bg"></div>
+
+    <div class="brainContainer"></div>
+
+    <header>
+        <nav>
+            <a href="#home" class="nav-link active" data-text="home"><span>home</span></a>
+            <a href="#about" class="nav-link" data-text="about"><span>about</span></a>
+            <a href="#projects" class="nav-link" data-text="projects"><span>projects</span></a>
+            <a href="#contact" class="nav-link" data-text="contact"><span>contact</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="hero-content">
+                <h1 class="main-name">Jordan Regan</h1>
+                <h2 class="job-title">Data Engineer</h2>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="about-container"> 
+                <h2>Background</h2>
+                <div class="about-text">
+                    <p>I started as a student passionate about sciences, driven by a curiosity for how the world works. During a challenging period in my life, I discovered the beauty of programming - not just as a skill, but as a turning point in my life that enabled newfound creativity and innovation. About six months later I was engineering large-scale batch data processes and administrating a Google Cloud Platform data warehouse for a company of thousands of employees - there was no going back now!</p>
+                    <p>After a couple of years of data engineering, I was able to take the opportunity to learn enterprise backend development, which led me down new avenues in the world of data: real-time, event streaming with Kafka; federated GraphQL queries with Apollo; and learning all about project data requirements in everything from CRM integration to enterprise microservice architecture.</p>
+                    <p>Four years into my data engineering journey and I am an accomplished cloud and on-prem pipeline aficionado with an ever-abounding thirst for knowledge and efficiency and a constantly developing background of maths and science on which to operate.</p>
+                    <p>Looking ahead to the future, I am becoming increasingly skilled in BigData and serverless data ingestion, where I am learning Hadoop, Spark and time-series technologies like AWS Timestream and InfluxDB. I am also gathering abilities in the fields of AI and ML, having completed several official courses in Google's VertexAI, so that I can support data science initiatives with clean, usable data for modelling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <div class="carousel-images">
+                            <img src="assets/images/gridwatch_timestream_architecture.png" alt="Timestream Architecture Diagram">
+                            <img src="assets/images/benchmark_results.png" alt="Timestream Benchmark Results">
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-button prev">&lt;</button>
+                            <button class="carousel-button next">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AWS Timestream Query Optimization</h3>
+                        <p class="project-description">A proof of concept for an AWS architected time-series data ingestion with AWS Timestream (InfluxDB) and a remotely controlled Python-based Lambda Script. 
+                            Also features a simple example of benchmarking optimized vs. poorly optimized queries showing a potential for a 35% decrease in query overheads.</p>
+                        <ul class="project-tech-list">
+                            <li>AWS (S3, ECR, Lambda)</li>
+                            <li>Timestream/InfluxDB</li>
+                            <li>Python/SQL</li>
+                            <li>Data Cleaning</li>
+                        </ul>
+                        <a href="https://github.com/UniquePhilosophy/GridwatchTimestream" target="_blank" rel="noopener noreferrer" class="project-link">View Repository &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <div class="carousel-images">
+                            <img src="assets/images/SparkAmznData.png" alt="Amazon Spark Architecture Diagram">
+                        </div> <div class="carousel-nav">
+                            <button class="carousel-button prev">&lt;</button>
+                            <button class="carousel-button next">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Distributed Processing in Spark & Hadoop</h3>
+                        <p class="project-description">Safe and production-ready, distributed data processing pipeline using Apache Spark on AWS EMR, with managed VPC and SSH for secure access. 
+                            This project involved processing Amazon's extremely large public product dataset, transforming it efficiently and scalably with Spark, and storing the results in S3.</p>
+                        <ul class="project-tech-list">
+                            <li>AWS (S3, EMR, VPC)</li>
+                            <li>Spark</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                        </ul>
+                        <a href="https://github.com/UniquePhilosophy/SparkAmznProducts" target="_blank" rel="noopener noreferrer" class="project-link">View Repository &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <div class="carousel-images">
+                            <img src="assets/images/finance_sentiments.png" alt="Kafka Finance Architecture Diagram">
+                        </div> <div class="carousel-nav">
+                            <button class="carousel-button prev">&lt;</button>
+                            <button class="carousel-button next">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Sentiment Analysis & Web Scraping with Kafka</h3>
+                        <p class="project-description">This application allows the data engineer to easily set up new Kafka producer clients to ingest financial data from a number of public sources on a schedule. 
+                            Once ingested, the events are propagated through the system in real-time and run through a FinBERT sentiment analysis model before being distributed again with Kafka.
+                        </p>
+                        <ul class="project-tech-list">
+                            <li>Kafka</li>
+                            <li>FinBERT</li>
+                            <li>Python</li>
+                            <li>Scheduling</li>
+                        </ul>
+                        <a href="https://github.com/UniquePhilosophy/FinanceSentimentProj" target="_blank" rel="noopener noreferrer" class="project-link">View Repository &rarr;</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h2>Have a project in mind?</h2>
+                    <p>Let's build something great together. Reach out and let's start the conversation.</p>
+                </div>
+                <div class="contact-right">
+
+                    <div id="contact-cards-view">
+                        <a href="#" id="email-card-btn" class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>Send a direct message</p>
+                            </div>
+                            <div class="contact-arrow">
+                                <span>&rarr;</span>
+                            </div>
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/jordan-regan-data/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                             <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>Professional Network</p>
+                            </div>
+                            <div class="contact-arrow">
+                                 <span>&rarr;</span>
+                            </div>
+                        </a>
+    
+                        <a href="https://github.com/UniquePhilosophy" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>Code & Projects</p>
+                            </div>
+                            <div class="contact-arrow">
+                                <span>&rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="contact-form-view" class="hidden">
+                        <button type="button" id="form-back-btn" class="form-back-btn">&larr; Back to options</button>
+                        <form id="contact-form" action="https://formspree.io/f/mrbybzaq" method="POST">
+                            <input class="contact-form-input" type="text" name="name" placeholder="Your Name" required>
+                            <input class="contact-form-input" type="email" name="email" placeholder="Your Email" required>
+                            <textarea class="contact-form-textarea" name="message" placeholder="Your message" required></textarea>
+                            <button type="submit" class="form-submit-btn">Send Message</button>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--
+    Brain Animation Sourced From:
+    Copyright (c) 2024 by leimapapa (https://codepen.io/leimapapa/pen/WNQvLMq)
+    MIT License included for attribution.
+    -->
+
+</body>
+</html>
